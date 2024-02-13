@@ -1,0 +1,28 @@
+
+name: "ssen"
+model_dir: "joeynmt/models"
+
+data:
+    train: "joeynmt/data/ssen/"
+    dev: "joeynmt/data/ssen/"
+    test: "joeynmt/data/ssen/"
+    dataset_type: "plain"
+    dataset_cfg:
+        name: "en-ss"
+    src:
+        lang: "ss"
+        level: "bpe"
+        lowercase: False
+        max_sent_length: 100
+        vocab: "joeynmt/data/ssen/vocab.txt"
+        tokenizer_type: "sentencepiece"
+        tokenizer_cfg:
+            model_file: "joeynmt/data/ssen/sp.model"
+    trg:
+        lang: "en"
+        level: "bpe"
+        lowercase: False
+        vocab: "joeynmt/data/ssen/vocab.txt"
+        tokenizer_type: "sentencepiece"
+        tokenizer_cfg:
+            model_file: "joeynmt/data/ssen/sp.model"

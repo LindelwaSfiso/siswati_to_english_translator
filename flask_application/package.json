@@ -1,0 +1,14 @@
+{
+  "name": "siswati_translator",
+  "version": "1.0.0",
+  "description": "Siswati translator application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
